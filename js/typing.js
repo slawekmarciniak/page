@@ -1,4 +1,7 @@
 const box = document.querySelector(".header__info");
+const firstPhrase = document.querySelector(".header__info--first");
+const secondPhrase = document.querySelector(".header__info--second");
+const thirdPhrase = document.querySelector(".header__info--third");
 const text = ["Ultran", "Web Developer", "Serwisy webowe i mobilne"];
 
 let activeDomElement = box;
