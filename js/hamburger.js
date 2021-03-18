@@ -6,6 +6,4 @@ export function hamburger() {
     ico.classList.toggle("active");
     listContainer.classList.toggle("menu-list-active");
   });
-
-  console.log("hello");
 }
