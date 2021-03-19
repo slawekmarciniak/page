@@ -6,9 +6,11 @@ export function balls() {
   //U
 
   gsap.from(".u", 2, {
-    x: -300,
+    scaleX: 25,
+    scaleY: 25,
+    x: -500,
     ease: "linear",
-    rotation: "-360",
+    rotation: "-720",
   });
 
   //L
@@ -28,30 +30,36 @@ export function balls() {
 
 //T
 gsap.from(".t", {
-  duration: 1,
-  scaleX: 0.1,
-  scaleY: 0.1,
-  y: -200,
-  ease: "linear",
+  duration: 2,
+  y: -500,
+  ease: "bounce.out",
 });
 //R
 
 gsap.from(".r", { duration: 1, y: 400, ease: "linear" });
 
 //A
-gsap.from(".a", { duration: 1, y: -400, ease: "linear" });
+gsap.from(".a", {
+  duration: 1,
+  y: -400,
+  x: 800,
+  scaleX: 40,
+  scaleY: 40,
+  ease: "linear",
+});
 
 //N
 
 gsap.from(".n", { duration: 2, x: 400 });
-gsap.to(".n", { duration: 2, rotation: "-360" });
+gsap.to(".n", { duration: 2, rotation: "-720" });
 
 //All Balls
 
 gsap.to(".ball", {
   delay: 2,
   duration: 1,
-  boxShadow: "0 0 15px 0 yellow",
-  textShadow: "0 0 5px yellow",
+  boxShadow: "0 0 15px 5px white",
+  textShadow: "2px 2px 4px white",
+  color: "white",
   ease: "linear",
 });
