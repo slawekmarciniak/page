@@ -45,6 +45,7 @@ gsap.from(".a", {
   x: 800,
   scaleX: 40,
   scaleY: 40,
+  rotation: "-360",
   ease: "linear",
 });
 
@@ -54,6 +55,11 @@ gsap.from(".n", { duration: 2, x: 400 });
 gsap.to(".n", { duration: 2, rotation: "-720" });
 
 //All Balls
+
+gsap.to(".ball", {
+  duration: 1,
+  opacity: 0.5,
+});
 
 gsap.to(".ball", {
   delay: 2,
