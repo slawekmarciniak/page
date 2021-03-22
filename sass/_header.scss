@@ -1,10 +1,10 @@
 .header {
+    display: flex;
+    position: relative;
     max-width: 1440px;
     margin: auto;
     height: 100vh;
     background-color: rgb(105, 105, 77);
-    display: flex;
-    position: relative;
     background-color: #485D7C;
     // background-image: url('../pictures/balloon.jpg');
     // background-repeat: no-repeat;
@@ -54,8 +54,9 @@
     width: 100%;
 }
 
+
+
 .profil {
-    position: relative;
     position: fixed;
     border: 2px solid white;
     box-shadow: 0 0 7px 1px white;
@@ -121,9 +122,10 @@
 .balls {
     position: absolute;
     display: flex;
-    top: 40% ;
-    left: 30%;
+    top: 35%;
+    left: 15%;
     transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
 .ball {

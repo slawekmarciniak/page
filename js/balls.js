@@ -13,6 +13,14 @@ export function balls() {
     rotation: "-720",
   });
 
+  gsap.to(".u", {
+    duration: 1,
+    delay: 4,
+    x: -1000,
+    y: -250,
+    ease: "linear",
+  });
+
   //L
 
   gsap.fromTo(
@@ -26,6 +34,14 @@ export function balls() {
     { duration: 0.5, x: 0, y: 50 },
     { x: 0, y: 0, ease: "linear", delay: 0.5 }
   );
+
+  gsap.to(".l", {
+    duration: 0.9,
+    delay: 4.1,
+    x: -1000,
+    y: -220,
+    ease: "linear",
+  });
 }
 
 //T
@@ -34,18 +50,42 @@ gsap.from(".t", {
   y: -500,
   ease: "bounce.out",
 });
+
+gsap.to(".t", {
+  duration: 0.8,
+  delay: 4.3,
+  x: -1000,
+  y: -180,
+  ease: "linear",
+});
 //R
 
 gsap.from(".r", { duration: 1, y: 400, ease: "linear" });
 
+gsap.to(".r", {
+  duration: 0.8,
+  delay: 4.5,
+  x: -1000,
+  y: -210,
+  ease: "linear",
+});
+
 //A
 gsap.from(".a", {
-  duration: 1,
+  duration: 0.7,
   y: -400,
-  x: 800,
+  x: -1000,
   scaleX: 40,
   scaleY: 40,
   rotation: "-360",
+  ease: "linear",
+});
+
+gsap.to(".a", {
+  duration: 0.6,
+  delay: 4.8,
+  x: -1000,
+  y: -190,
   ease: "linear",
 });
 
@@ -53,6 +93,14 @@ gsap.from(".a", {
 
 gsap.from(".n", { duration: 2, x: 400 });
 gsap.to(".n", { duration: 2, rotation: "-720" });
+
+gsap.to(".n", {
+  duration: 0.5,
+  delay: 5,
+  x: -1000,
+  y: -170,
+  ease: "linear",
+});
 
 //All Balls
 

@@ -117,14 +117,14 @@
 }
 
 .header {
-  max-width: 1440px;
-  margin: auto;
-  height: 100vh;
-  background-color: #69694d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+  background-color: #69694d;
   background-color: #485D7C;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -169,7 +169,6 @@
 }
 
 .profil {
-  position: relative;
   position: fixed;
   border: 2px solid white;
   -webkit-box-shadow: 0 0 7px 1px white;
@@ -231,10 +230,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 40%;
-  left: 30%;
+  top: 35%;
+  left: 15%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 .ball {
@@ -300,15 +300,32 @@
   }
 }
 
+.nav {
+  position: fixed;
+  left: 10%;
+  z-index: 3;
+}
+
+ul li {
+  list-style: none;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 40px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 @media (max-width: 1000px) {
-  .nav {
-    position: fixed;
-  }
-  ul li {
-    list-style: none;
-    font-weight: bold;
-    opacity: 0.8;
-  }
   ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -330,39 +347,5 @@
     line-height: 3rem;
     color: #272424;
   }
-}
-
-.nav {
-  position: fixed;
-}
-
-ul li {
-  list-style: none;
-  font-weight: bold;
-  opacity: 0.8;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30vw;
-  margin-top: 40px;
-  margin-left: -30vw;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.menu-list-active {
-  margin-left: 10vw;
-}
-
-li {
-  line-height: 3rem;
-  color: #272424;
 }
 /*# sourceMappingURL=main.css.map */
