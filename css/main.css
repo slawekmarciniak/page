@@ -125,11 +125,7 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-image: url("../pictures/balloon.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: left bottom;
+  background-color: #485D7C;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -160,22 +156,16 @@
   margin-bottom: 100px;
 }
 
-@-webkit-keyframes mainBackground {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 103%;
-  }
+.header__picture__container {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  width: 40%;
+  height: 100px;
 }
 
-@keyframes mainBackground {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 103%;
-  }
+.header__picture__container img {
+  width: 100%;
 }
 
 .profil {
@@ -184,7 +174,7 @@
   border: 2px solid white;
   -webkit-box-shadow: 0 0 7px 1px white;
           box-shadow: 0 0 7px 1px white;
-  right: 100px;
+  left: 100px;
   top: 50px;
   width: 100px;
   height: 100px;
@@ -241,8 +231,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 30%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }

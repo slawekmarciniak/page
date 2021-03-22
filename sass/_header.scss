@@ -5,11 +5,12 @@
     background-color: rgb(105, 105, 77);
     display: flex;
     position: relative;
-    background-image: url('../pictures/balloon.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left bottom;
+    background-color: #485D7C;
+    // background-image: url('../pictures/balloon.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: left bottom;
     flex-direction: column;
     justify-content: flex-end;
     align-items: left;
@@ -34,9 +35,23 @@
     }
 }
 
-@keyframes mainBackground {
-    0% {background-size: 100%}
-    100% {background-size: 103%}
+
+
+// @keyframes mainBackground {
+//     0% {background-size: 100%}
+//     100% {background-size: 103%}
+// }
+
+.header__picture__container {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 40%;
+    height: 100px;
+}
+
+.header__picture__container img {
+    width: 100%;
 }
 
 .profil {
@@ -44,7 +59,7 @@
     position: fixed;
     border: 2px solid white;
     box-shadow: 0 0 7px 1px white;
-    right: 100px;
+    left: 100px;
     top: 50px;
     width: 100px;
     height: 100px;
@@ -53,6 +68,8 @@
     background-image: url('../pictures/profil1.png');
     z-index: 1;
 }
+
+
 
 .star__container {
     position: absolute;
@@ -104,8 +121,8 @@
 .balls {
     position: absolute;
     display: flex;
-    top: 50% ;
-    left: 50%;
+    top: 40% ;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 
