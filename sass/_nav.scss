@@ -18,18 +18,17 @@ ul li {
     list-style: none;
     font-weight: bold;
     text-align: center;
-    opacity: 0.8;
+    // opacity: 0.8;
     line-height: 100px;
-    color: rgb(39, 36, 36);
+    // color: rgb(39, 36, 36);
+    color: white;
     cursor: pointer;
     transition: 0.4s;
 
 }
 
 ul li:hover {
-    color: white;
-    opacity: 0.6;
-    // text-shadow: 2px 2px 1px white,
+    text-shadow: 1px 1px 10px white,
 }
 
 .profil {
