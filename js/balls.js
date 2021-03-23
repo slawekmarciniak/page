@@ -15,7 +15,7 @@ export function balls() {
 
   gsap.to(".u", {
     duration: 1,
-    delay: 4,
+    delay: 6,
     x: -1000,
     y: -250,
     ease: "linear",
@@ -37,7 +37,7 @@ export function balls() {
 
   gsap.to(".l", {
     duration: 0.9,
-    delay: 4.1,
+    delay: 6.2,
     x: -1000,
     y: -220,
     ease: "linear",
@@ -53,7 +53,7 @@ gsap.from(".t", {
 
 gsap.to(".t", {
   duration: 0.8,
-  delay: 4.3,
+  delay: 6.3,
   x: -1000,
   y: -180,
   ease: "linear",
@@ -64,7 +64,7 @@ gsap.from(".r", { duration: 1, y: 400, ease: "linear" });
 
 gsap.to(".r", {
   duration: 0.8,
-  delay: 4.5,
+  delay: 6.6,
   x: -1000,
   y: -210,
   ease: "linear",
@@ -83,7 +83,7 @@ gsap.from(".a", {
 
 gsap.to(".a", {
   duration: 0.6,
-  delay: 4.8,
+  delay: 6.7,
   x: -1000,
   y: -190,
   ease: "linear",
@@ -96,7 +96,7 @@ gsap.to(".n", { duration: 2, rotation: "-720" });
 
 gsap.to(".n", {
   duration: 0.5,
-  delay: 5,
+  delay: 7,
   x: -1000,
   y: -170,
   ease: "linear",
