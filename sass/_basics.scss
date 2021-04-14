@@ -1,7 +1,13 @@
+body {
+    background-color: #6C8FC2;
+}
+
 .wrapper {
     font-family: $main-font;
     font-size: $main-font-size;
     width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
     background-color: black;
 
 }

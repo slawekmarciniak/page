@@ -2,17 +2,16 @@
     position: relative;
     margin: auto;
     height: 100vh;
-    background-color: rgb(105, 105, 77);
-    background-color: #485D7C;
+    background-color: #6C8FC2;
     overflow: hidden;
     z-index: 1;
 
     & p {
-        color: whitesmoke;
+        color: white;
         font-family: 'Montserrat', sans-serif;
         line-height: 3rem;
         letter-spacing: 2px;
-        opacity: 0.6;
+        opacity: 0.8;
         z-index: 4;
         
 
@@ -41,6 +40,7 @@ z-index: 3;
     border-radius: 50%;
     z-index: 2;
     background-color: #83c4f5;
+    
 
 }.header__circle2 {
     position: absolute;
@@ -52,6 +52,7 @@ z-index: 3;
     border-radius: 50%;
     z-index: 2;
     background-color: #83c4f5;
+    opacity: 0.9;
 
 }
 
@@ -62,7 +63,7 @@ z-index: 3;
     width: 45vw;
     height: 30vw;
     background-image: url('../pictures/balloon.jpg');
-    box-shadow: 0 0 4px 1px white;
+    box-shadow: 0 0 4px 1px #090C13;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;

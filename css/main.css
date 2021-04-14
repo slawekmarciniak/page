@@ -6,10 +6,16 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #6C8FC2;
+}
+
 .wrapper {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   background-color: black;
 }
 
@@ -48,18 +54,17 @@
   position: relative;
   margin: auto;
   height: 100vh;
-  background-color: #69694d;
-  background-color: #485D7C;
+  background-color: #6C8FC2;
   overflow: hidden;
   z-index: 1;
 }
 
 .header p {
-  color: whitesmoke;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   line-height: 3rem;
   letter-spacing: 2px;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: 4;
 }
 
@@ -97,6 +102,7 @@
   border-radius: 50%;
   z-index: 2;
   background-color: #83c4f5;
+  opacity: 0.9;
 }
 
 .header__pictures {
@@ -106,8 +112,8 @@
   width: 45vw;
   height: 30vw;
   background-image: url("../pictures/balloon.jpg");
-  -webkit-box-shadow: 0 0 4px 1px white;
-          box-shadow: 0 0 4px 1px white;
+  -webkit-box-shadow: 0 0 4px 1px #090C13;
+          box-shadow: 0 0 4px 1px #090C13;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -208,8 +214,11 @@
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  max-width: 1500px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 3;
 }
 
@@ -230,10 +239,10 @@ ul {
 
 ul li {
   list-style: none;
-  font-weight: bold;
   text-align: center;
-  line-height: 100px;
+  line-height: 80px;
   color: white;
+  letter-spacing: 1px;
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -248,8 +257,8 @@ ul li:hover {
   border: 2px solid white;
   -webkit-box-shadow: 0 0 7px 1px white;
           box-shadow: 0 0 7px 1px white;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-size: cover;
   background-image: url("../pictures/profil1.png");
@@ -324,6 +333,7 @@ ul li:hover {
 
 .main h1 {
   line-height: 150px;
+  font-size: 1.6rem;
   color: black;
   text-align: center;
   width: 100%;
@@ -420,6 +430,6 @@ ul li:hover {
 
 .technologies img {
   place-self: center;
-  width: 100px;
+  width: 40%;
 }
 /*# sourceMappingURL=main.css.map */

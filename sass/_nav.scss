@@ -2,8 +2,10 @@
    .nav {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;    
+    left: 50%;
+    width: 100%;
+    max-width: 1500px;
+    transform: translateX(-50%);  
     z-index: 3;
     // background-color: #485D7C;
     
@@ -23,10 +25,12 @@ ul {
 
 ul li {
     list-style: none;
-    font-weight: bold;
+    // font-weight: bold;
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
     color: white;
+    letter-spacing: 1px;
+
     cursor: pointer;
     transition: 0.4s;
 
@@ -40,8 +44,8 @@ ul li:hover {
     position: relative;
     border: 2px solid white;
     box-shadow: 0 0 7px 1px white;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-size: cover;
     background-image: url('../pictures/profil1.png');
