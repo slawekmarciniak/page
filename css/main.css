@@ -33,13 +33,6 @@
   overflow: hidden;
 }
 
-.bio img {
-  position: absolute;
-  height: 120%;
-  opacity: 0.4;
-  z-index: 2;
-}
-
 .contact {
   height: 80vh;
   background-color: chocolate;
@@ -141,8 +134,8 @@
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  background-color: black;
-  opacity: .1;
+  background-color: #83C4F5;
+  opacity: .3;
   color: #979787;
   visibility: hidden;
 }
@@ -353,11 +346,11 @@ ul li:hover {
 }
 
 .technologies {
-  height: 100vh;
-  background-color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #83C4F5;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -368,28 +361,28 @@ ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
+}
+
+.technologies h2 {
+  line-height: 200px;
+  width: 100%;
+  text-align: center;
 }
 
 .technologies__container {
-  width: 90%;
-  margin-top: 10px auto;
-  border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 70%;
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  height: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
 }
 
 .technologies img {
-  width: 15%;
-  height: 15%;
-  margin: 10px;
+  place-self: center;
+  width: 100px;
 }
 /*# sourceMappingURL=main.css.map */
