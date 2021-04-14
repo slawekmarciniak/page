@@ -1,11 +1,12 @@
 
    .nav {
     position: fixed;
-    top: 5%;
+    top: 0;
     left: 0;
     width: 100%;    
     z-index: 3;
     // background-color: #485D7C;
+    
     // opacity: 0.5;
 }
 
@@ -13,6 +14,10 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgba(131, 196, 245, 0.8);;
+    padding: 5px;
+    
+   
 }
 
 
@@ -20,9 +25,7 @@ ul li {
     list-style: none;
     font-weight: bold;
     text-align: center;
-    // opacity: 0.8;
     line-height: 100px;
-    // color: rgb(39, 36, 36);
     color: white;
     cursor: pointer;
     transition: 0.4s;

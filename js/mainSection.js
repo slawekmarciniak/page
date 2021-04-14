@@ -3,8 +3,10 @@ export function mainSection() {
     x: -1000,
     scrollTrigger: {
       trigger: ".main",
-      start: "top top+=100px",
-      end: "+=100px",
+      start: "top 300px",
+      end: "top 50px",
+      scrub: 1,
+      markers: true,
     },
   });
 
@@ -12,7 +14,9 @@ export function mainSection() {
     x: 1000,
     scrollTrigger: {
       trigger: ".main",
-      start: "top top+=250px",
+      start: "top 200px",
+      end: "top 10px",
+      scrub: 1,
     },
   });
 }

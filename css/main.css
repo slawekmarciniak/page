@@ -78,7 +78,6 @@
 
 .header__circle1 {
   position: absolute;
-  background-color: yellow;
   width: 70vw;
   height: 70vw;
   top: 50%;
@@ -107,12 +106,28 @@
   width: 45vw;
   height: 30vw;
   background-image: url("../pictures/balloon.jpg");
+  -webkit-box-shadow: 0 0 4px 1px white;
+          box-shadow: 0 0 4px 1px white;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   border-radius: 5px;
   z-index: 10;
   overflow: hidden;
+  -webkit-animation: mainPicture 6s linear infinite alternate;
+          animation: mainPicture 6s linear infinite alternate;
+}
+
+@-webkit-keyframes mainPicture {
+  to {
+    background-size: 110%;
+  }
+}
+
+@keyframes mainPicture {
+  to {
+    background-size: 110%;
+  }
 }
 
 .balls {
@@ -134,9 +149,9 @@
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  background-color: #83C4F5;
-  opacity: .3;
-  color: #979787;
+  background-color: #485D7C;
+  opacity: .6;
+  color: white;
   visibility: hidden;
 }
 
@@ -192,7 +207,7 @@
 
 .nav {
   position: fixed;
-  top: 5%;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
@@ -209,6 +224,8 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: rgba(131, 196, 245, 0.8);
+  padding: 5px;
 }
 
 ul li {
@@ -282,6 +299,7 @@ ul li:hover {
 }
 
 .main {
+  position: relative;
   height: 100vh;
   background-color: #6c8fc2;
   display: -webkit-box;
@@ -294,12 +312,23 @@ ul li:hover {
   overflow: hidden;
 }
 
+.mainBall {
+  position: absolute;
+  background-color: #83C4F5;
+  width: 70vw;
+  height: 70vw;
+  right: -20vw;
+  top: -20vw;
+  border-radius: 50%;
+}
+
 .main h1 {
-  line-height: 200px;
+  line-height: 150px;
   color: black;
   text-align: center;
   width: 100%;
   background-color: #83C4F5;
+  z-index: 1;
 }
 
 .main__container {
@@ -311,6 +340,9 @@ ul li:hover {
 
 .main__container h2 {
   line-height: 3rem;
+  letter-spacing: 1.5;
+  font-size: 1.2rem;
+  opacity: .8;
 }
 
 .main__container__left {
@@ -318,7 +350,8 @@ ul li:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  padding: 5%;
+  padding-left: 10%;
+  padding-bottom: 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -326,7 +359,9 @@ ul li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
 }
 
 .main__container__right {
@@ -334,7 +369,8 @@ ul li:hover {
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  padding: 5%;
+  padding-left: 5%;
+  padding-top: 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -368,6 +404,7 @@ ul li:hover {
   line-height: 200px;
   width: 100%;
   text-align: center;
+  background-color: #6C8FC2;
 }
 
 .technologies__container {
