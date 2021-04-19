@@ -4,8 +4,8 @@ export function technologies() {
     rotation: "-1080",
     scrollTrigger: {
       trigger: ".technologies",
-      start: "top 300px",
-      end: "top 100px",
+      start: "top 250px",
+      end: "top 150px",
       scrub: 1,
       // markers: true,
     },
@@ -16,7 +16,7 @@ export function technologies() {
     scrollTrigger: {
       trigger: ".technologies",
       start: "top 200px",
-      end: "top 50px",
+      end: "top 120px",
       scrub: 1,
     },
   });

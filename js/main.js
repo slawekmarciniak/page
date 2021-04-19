@@ -4,6 +4,7 @@ import { balls } from "./balls.js";
 import { profilePicture } from "./profilePicture.js";
 import { mainSection } from "./mainSection.js";
 import { technologies } from "./technologies.js";
+import { contact } from "./contact.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   hamburger();
@@ -15,4 +16,5 @@ window.addEventListener("DOMContentLoaded", () => {
   profilePicture();
   mainSection();
   technologies();
+  contact();
 });
