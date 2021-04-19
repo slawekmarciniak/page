@@ -109,27 +109,116 @@
             </div>
         </section>
 
-        <section class="bio">
-            <h2>>historia</h2>
-
-            <h3>Sławomir Marciniak</h3>
-            <h3>full stack web developer</h3>
-
-            <p>Zawsze pełen pasji do programowania. Z entuzjazmem podchodzę do każdego nowego zagdnienia. Nie ma rzeczy
-                niemożliwych. Każdy projekt to dla mnie wyzwanie. Dostarczam rozwiązań w oparciu o najnowsze
-                technologie.
-                Zależy mi na jak dobrych relacjach z klientem. Taka współpracy przynosi najlepsze efekty.
-            </p>
-            <p>Napisz do mnie i sprawdź moją dostępność dla realizacji Twojego projektu.</p>
-
-
-        </section>
         <section class="contact">
+            <h1 class="contactHeader">> kontakt</h1>
+            <div class="wrapContact">
+                <div class="form_container">
+                    <!-- <p class="form_info">zadaj pytanie i uzyskaj informacje wolnych terminach</p> -->
+                    <form id="javascript_form">
+                        <input type="text" id="formSubject" name="subject" placeholder="podaj adres mail" /> <br>
 
-            <p>mail: slawek.jazz@gmail.com</p>
+                        <textarea name="text" id="formText" placeholder="wpisz wiadomość.."></textarea> <br>
+
+                        <input type="submit" id="js_send" value="WYŚLIJ" />
+
+                        <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site
+                        <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p> -->
+                    </form>
+
+                </div>
+                <div class="pictureContainer">
+                </div>
+
+            </div>
+
+
+
+            <script>
+                //update this with your js_form selector
+                var form_id_js = "javascript_form";
+
+                var data_js = {
+                    "access_token": "6eqdvm2hajtpkw3njc9sldka"
+                };
+
+                function js_onSuccess() {
+                    // remove this to avoid redirect
+                    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+                }
+
+                function js_onError(error) {
+                    // remove this to avoid redirect
+                    window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+                }
+
+                var sendButton = document.getElementById("js_send");
+
+                function js_send() {
+                    sendButton.value = 'Sending…';
+                    sendButton.disabled = true;
+                    var request = new XMLHttpRequest();
+                    request.onreadystatechange = function () {
+                        if (request.readyState == 4 && request.status == 200) {
+                            js_onSuccess();
+                        } else
+                        if (request.readyState == 4) {
+                            js_onError(request.response);
+                        }
+                    };
+
+                    var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+                    var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+                    data_js['subject'] = subject;
+                    data_js['text'] = message;
+                    var params = toParams(data_js);
+
+                    request.open("POST", "https://postmail.invotes.com/send", true);
+                    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                    request.send(params);
+
+                    return false;
+                }
+
+                sendButton.onclick = js_send;
+
+                function toParams(data_js) {
+                    var form_data = [];
+                    for (var key in data_js) {
+                        form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+                    }
+
+                    return form_data.join("&");
+                }
+
+                var js_form = document.getElementById(form_id_js);
+                js_form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                });
+            </script>
+
+
+            <!-- <form action="post">
+
+                <label for="name">wpisz swoje imię</label><br>
+                <input type="text" name="name"><br>
+
+                <label for="name">mail</label><br>
+                <input type="text" name="name"><br>
+
+                <label for="name">nr telefonu</label><br>
+                <input type="text" name="name"><br>
+
+                <label for="name">napisz wiadomość</label><br>
+                <input type="text" name="name"><br>
+
+                <input type="submit" value="wyślij">
+
+
+            </form> -->
         </section>
         <footer class="footer">
-            <span>Ultran technologies</span>
+            <span>Ultran</span>
         </footer>
 
     </div>

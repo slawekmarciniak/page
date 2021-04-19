@@ -4,7 +4,7 @@ export function mainSection() {
     scrollTrigger: {
       trigger: ".main",
       start: "top 300px",
-      end: "top 75px",
+      end: "top 200px",
       scrub: 1,
       // markers: true,
     },
@@ -15,7 +15,7 @@ export function mainSection() {
     scrollTrigger: {
       trigger: ".main",
       start: "top 200px",
-      end: "top 50px",
+      end: "top 100px",
       scrub: 1,
     },
   });

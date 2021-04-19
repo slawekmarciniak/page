@@ -5,9 +5,9 @@ export function technologies() {
     scrollTrigger: {
       trigger: ".technologies",
       start: "top 300px",
-      end: "top 50px",
+      end: "top 100px",
       scrub: 1,
-      markers: true,
+      // markers: true,
     },
   });
 
@@ -16,7 +16,7 @@ export function technologies() {
     scrollTrigger: {
       trigger: ".technologies",
       start: "top 200px",
-      end: "top 10px",
+      end: "top 50px",
       scrub: 1,
     },
   });
