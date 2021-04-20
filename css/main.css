@@ -19,26 +19,6 @@ body {
   background-color: black;
 }
 
-.bio {
-  position: relative;
-  height: 100vh;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
 .header {
   position: relative;
   margin: auto;
@@ -49,107 +29,73 @@ body {
 }
 
 .header p {
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   line-height: 3rem;
   letter-spacing: 2px;
   font-size: 20px;
-  opacity: 0.6;
-  z-index: 4;
+  opacity: 0.8;
+  z-index: 6;
 }
 
 .header p:last-child {
   margin-bottom: 100px;
 }
 
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
 .header__info {
   position: absolute;
   top: 60%;
-  left: 10%;
+  left: 20%;
   height: 50px;
   width: 30%;
-  z-index: 3;
+  z-index: 6;
+}
+
+.header__circle1, .header__circle2 {
+  position: absolute;
+  width: 70vh;
+  height: 70vh;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 2;
+  background-color: #0D6DCB;
 }
 
 .header__circle1 {
-  position: absolute;
-  width: 70vw;
-  height: 70vw;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  z-index: 2;
-  background-color: #83c4f5;
+  top: 20%;
+  left: 12%;
+  -webkit-animation: circle 4s;
+          animation: circle 4s;
 }
 
 .header__circle2 {
-  position: absolute;
-  background-color: yellow;
-  width: 70vw;
-  height: 70vw;
-  right: 50%;
-  bottom: 50%;
-  border-radius: 50%;
-  z-index: 2;
-  background-color: #83c4f5;
-  opacity: 0.9;
+  background-color: darkgoldenrod;
+  left: 10%;
+  top: 10%;
+  -webkit-animation: circle 2s;
+          animation: circle 2s;
 }
 
-.header__pictures {
-  position: absolute;
-  right: 10%;
-  top: 25%;
-  width: 45vw;
-  height: 30vw;
-  background-image: url("../pictures/balloon.jpg");
-  -webkit-box-shadow: 0 0 4px 1px #090C13;
-          box-shadow: 0 0 4px 1px #090C13;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  border-radius: 5px;
-  z-index: 10;
-  overflow: hidden;
-  -webkit-animation: mainPicture 6s alternate 2;
-          animation: mainPicture 6s alternate 2;
-}
-
-@-webkit-keyframes mainPicture {
-  100% {
-    background-size: 110%;
+@-webkit-keyframes circle {
+  from {
+    top: 40%;
   }
 }
 
-@keyframes mainPicture {
-  100% {
-    background-size: 110%;
+@keyframes circle {
+  from {
+    top: 40%;
   }
-}
-
-.balls {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  bottom: 20%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 3;
-}
-
-.ball {
-  width: 50px;
-  height: 50px;
-  margin-left: 5px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  background-color: #485D7C;
-  opacity: .6;
-  color: white;
-  visibility: hidden;
 }
 
 @media (max-width: 800px) {
@@ -224,7 +170,7 @@ ul {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: rgba(131, 196, 245, 0.8);
+  background-color: #0D6DCB;
   padding: 5px;
 }
 
@@ -248,8 +194,8 @@ ul li:hover {
   border: 2px solid white;
   -webkit-box-shadow: 0 0 7px 1px white;
           box-shadow: 0 0 7px 1px white;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-size: cover;
   background-image: url("../pictures/profil1.png");
@@ -314,7 +260,7 @@ ul li:hover {
 
 .mainBall {
   position: absolute;
-  background-color: #83C4F5;
+  background-color: #0D6DCB;
   width: 70vw;
   height: 70vw;
   right: -20vw;
@@ -322,8 +268,8 @@ ul li:hover {
   border-radius: 50%;
 }
 
-.main h1 {
-  line-height: 150px;
+.title {
+  line-height: 100px;
   font-size: 1.6rem;
   color: black;
   text-align: center;
@@ -399,13 +345,6 @@ ul li:hover {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-}
-
-.technologies h2 {
-  line-height: 200px;
-  width: 100%;
-  text-align: center;
-  background-color: #6C8FC2;
 }
 
 .technologies__container {
@@ -578,26 +517,6 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   background-color: black;
-}
-
-.bio {
-  position: relative;
-  height: 100vh;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
 }
 
 .footer {

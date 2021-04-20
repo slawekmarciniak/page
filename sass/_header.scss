@@ -7,14 +7,14 @@
     z-index: 1;
 
     & p {
-        color:black;
+        color: white;
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         line-height: 3rem;
         letter-spacing: 2px;
         font-size: 20px;
-        opacity: 0.6;
-        z-index: 4;
+        opacity: 0.8;
+        z-index: 6;
         
 
     }
@@ -23,92 +23,52 @@
     }
 }
 
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 .header__info {
 position: absolute;
 top: 60%;
-left: 10%;
+left: 20%;
 height: 50px;
 width: 30%;
-z-index: 3;
+z-index: 6;
+}
+
+
+.header__circle1, .header__circle2 {
+    position: absolute;
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 2;
+    background-color: $dark-blue;
 }
 
 
 .header__circle1 {
-    position: absolute;
-    width: 70vw;
-    height: 70vw;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    z-index: 2;
-    background-color: #83c4f5;
-    
-
-}.header__circle2 {
-    position: absolute;
-    background-color: yellow;
-    width: 70vw;
-    height: 70vw;
-    right: 50%;
-    bottom: 50%;
-    border-radius: 50%;
-    z-index: 2;
-    background-color: #83c4f5;
-    opacity: 0.9;
-
-}
-
-.header__pictures {
-    position: absolute;
-    right: 10%;
-    top: 25%;
-    width: 45vw;
-    height: 30vw;
-    background-image: url('../pictures/balloon.jpg');
-    box-shadow: 0 0 4px 1px #090C13;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border-radius: 5px;
-    z-index: 10;
-    overflow: hidden;
-    animation: mainPicture 6s alternate 2;
- 
-}
-
-
-
-@keyframes mainPicture {
-    
-   100% {background-size: 110%}
+    top: 20%;
+    left: 12%;
+    animation: circle 4s;
     
 }
-
-
-.balls {
-    position: absolute;
-    display: flex;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
+.header__circle2 {
+    background-color: darkgoldenrod;
+    left: 10%;
+    top: 10%;
+    animation: circle 2s;
 }
 
-.ball {
-    width: 50px;
-    height: 50px;
-    margin-left: 5px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    background-color: #485D7C;
-
-    opacity: .6;
-    color: white;
-    visibility: hidden;
-    
+@keyframes circle {
+    from {
+        top: 40%;
+    } 
 }
-
-
-
 

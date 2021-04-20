@@ -11,7 +11,7 @@
 
 .mainBall{
     position: absolute;
-    background-color: #83C4F5;
+    background-color: $dark-blue;
     width: 70vw;
     height: 70vw;
     right: -20vw;
@@ -21,8 +21,8 @@
 
 }
 
-.main h1 {
-    line-height: 150px;
+.title {
+    line-height: 100px;
     font-size: 1.6rem;
     color: black;
     text-align: center;
