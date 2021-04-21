@@ -1,10 +1,13 @@
 
 .footer {
     height: 10vh;
-    background-color: #6C8FC2;
+    background-color: $dark-blue;
     width: 100%;
     color: white;
     text-align: right;
     line-height: 10vh;
     margin-right: 100px;
+    & span {
+        padding-right: 50px;
+    }
 }

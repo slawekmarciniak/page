@@ -2,7 +2,7 @@
  .main {
     position: relative;
     height: 100vh;
-    background-color: #6c8fc2;
+    background-color:$blue;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -19,16 +19,6 @@
     border-radius: 50%;
 
 
-}
-
-.title {
-    line-height: 100px;
-    font-size: 1.6rem;
-    color: black;
-    text-align: center;
-    width: 100%;
-    background-color: #83C4F5;
-    z-index: 1;
 }
 
 .main__container {

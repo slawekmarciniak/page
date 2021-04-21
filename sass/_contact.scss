@@ -14,17 +14,9 @@
 
 #javascript_form {
     transform: translateX(60%);
-
     width: 40vw;
 }
 
-
-.contactHeader {
-        line-height: 150px;
-        width: 100%;
-        text-align: center;
-        background-color: #6C8FC2;
-}
 
 .wrapContact {
     position: relative;
@@ -45,7 +37,7 @@
     width: 50vw;
     height: 50vw;
     border-radius: 50%;
-    background-color: #6C8FC2;
+    background-color: $dark-blue;
     z-index: 1;
 }
 
@@ -56,7 +48,7 @@
     width: 30vw;
     height: 30vw;
     border-radius: 50%;
-    background-color: #6C8FC2;
+    background-color: $dark-blue;
     z-index: 1;
 }
 

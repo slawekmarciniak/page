@@ -1,3 +1,8 @@
+
+
+
+
+
 .header {
     position: relative;
     margin: auto;
@@ -5,23 +10,10 @@
     background-color: #6C8FC2;
     overflow: hidden;
     z-index: 1;
-
-    & p {
-        color: white;
-        font-weight: bold;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 3rem;
-        letter-spacing: 2px;
-        font-size: 20px;
-        opacity: 0.8;
-        z-index: 6;
-        
-
     }
-    & p:last-child {
-        margin-bottom: 100px;
-    }
-}
+
+
+
 
 #myVideo {
     position: absolute;
@@ -38,7 +30,29 @@ top: 60%;
 left: 20%;
 height: 50px;
 width: 30%;
-z-index: 6;
+z-index: 2;
+@include phone {
+    width: 80%;
+    left: 15%;
+}
+
+& p {
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-size: 20px;
+    opacity: 0.8;
+    z-index: 1;
+    @include phone {
+        font-size: 18px;
+    }
+    
+
+}
+& p:last-child {
+  margin-bottom: 100px;
+}
 }
 
 
@@ -50,13 +64,21 @@ z-index: 6;
     opacity: 0.8;
     z-index: 2;
     background-color: $dark-blue;
+    @include phone {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 
 .header__circle1 {
+    
     top: 20%;
     left: 12%;
     animation: circle 4s;
+    @include phone {
+        top: 55%;
+     }
     
 }
 .header__circle2 {
@@ -64,11 +86,10 @@ z-index: 6;
     left: 10%;
     top: 10%;
     animation: circle 2s;
+    @include phone {
+        top: 43%;
+        left: 5%;
+     }
 }
 
-@keyframes circle {
-    from {
-        top: 40%;
-    } 
-}
 

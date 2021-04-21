@@ -3,3 +3,10 @@ $main-font: 'Montserrat', sans-serif;
 $main-font-size: 16px;
 $blue: #83C4F5;
 $dark-blue: #0D6DCB;
+
+
+@mixin phone {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
