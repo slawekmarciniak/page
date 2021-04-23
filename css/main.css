@@ -488,6 +488,14 @@ ul li:hover {
   width: 40vw;
 }
 
+@media (max-width: 599px) {
+  #javascript_form {
+    width: 80vw;
+    -webkit-transform: translateX(10%);
+            transform: translateX(10%);
+  }
+}
+
 .wrapContact {
   position: relative;
   display: -webkit-box;
@@ -511,8 +519,16 @@ ul li:hover {
   width: 50vw;
   height: 50vw;
   border-radius: 50%;
-  background-color: #0D6DCB;
+  background-color: rgba(13, 109, 203, 0.7);
   z-index: 1;
+}
+
+@media (max-width: 599px) {
+  .bigBall {
+    top: 50px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .smallBall {
@@ -522,8 +538,18 @@ ul li:hover {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-  background-color: #0D6DCB;
+  background-color: goldenrod;
+  opacity: 0.7;
   z-index: 1;
+}
+
+@media (max-width: 599px) {
+  .smallBall {
+    top: 250px;
+    right: -10px;
+    height: 300px;
+    width: 300px;
+  }
 }
 
 #formSubject {
@@ -611,6 +637,7 @@ body {
 }
 
 .footer {
+  position: relative;
   height: 10vh;
   background-color: #0D6DCB;
   width: 100%;
@@ -618,6 +645,7 @@ body {
   text-align: right;
   line-height: 10vh;
   margin-right: 100px;
+  z-index: 1;
 }
 
 .footer span {

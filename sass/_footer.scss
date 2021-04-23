@@ -1,5 +1,6 @@
 
 .footer {
+    position: relative;
     height: 10vh;
     background-color: $dark-blue;
     width: 100%;
@@ -7,6 +8,7 @@
     text-align: right;
     line-height: 10vh;
     margin-right: 100px;
+    z-index: 1;
     & span {
         padding-right: 50px;
     }
