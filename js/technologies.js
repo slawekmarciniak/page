@@ -21,7 +21,7 @@ export function technologies() {
     },
   });
 
-  gsap.from(".technologieHeader", {
+  gsap.from(".technologiesHeader", {
     fontSize: "0.2",
     scrollTrigger: {
       trigger: ".technologies",
