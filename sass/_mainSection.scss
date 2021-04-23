@@ -2,74 +2,89 @@
  .main {
     position: relative;
     height: 100vh;
-    background-color:$blue;
+    // background-color:$blue-opacity;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    z-index: 1;
 
 }
 
 .mainBall{
     position: absolute;
-    background-color: $dark-blue;
+    background-color: $dark-blue-opacity;
     width: 70vw;
     height: 70vw;
     right: -20vw;
     top: -20vw;
     border-radius: 50%;
 
+    @include phone {
+        top: 20%;
+        right: -50%;
+        width: 500px;
+        height: 500px;
+    }
+
 
 }
 
 .main__container {
     display: flex;
+    flex-direction: column;
     height: 100%;
+    color: white;
+
+
 }
 
 .main__container h2 {
     line-height: 3rem;
     letter-spacing: 1.5;
     font-size: 1.2rem;
-    opacity: .8;
+    @include phone {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        opacity: 0.9;
+    }
     
 }
 
+
+.main__container__left, .main__container__right {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main__container__left {
-display: flex;
-width: 50%;
-padding-left: 10%;
-padding-bottom: 10%;
-flex-direction: column;
-justify-content: center;
-align-items: left;
+padding-left: 15%;
+padding-top: 7%;
+
+@include phone {
+    padding-left: 8%;
+    padding-top: 15%;
+ 
+}
+
 }
 
 .main__container__right {
-display: flex;
-width: 50%;
-padding-left: 5%;
-padding-top: 10%;
-flex-direction: column;
-justify-content: center;
-height: 100%;
+padding-left: 55%;
+padding-bottom: 10%;
+
+@include phone {
+    padding-left: 8%;
+    padding-bottom: 20%;
+    color: goldenrod;
+}
+
+
 }
 
 
 
 
 
-
-
-
-        //     <div class="main__container">
-        //     <div class="main__container__left">
-        //         <h2>Tworzę kompletne aplikacje webowe i mobilne</h2>
-        //         <h3>Obsługuję strony internetowe i sklepy e-commerce</h3>
-        //         <h3>Dostarczam rozwiazań frontendowych i backendowych;</h3>
-        //     </div>
-        //     <div class="main__container__right">
-        //         <h3>Unowocześniam i przyspieszam już istniejące serwisy;</h3>
-        //         <h3>Tworzę bazy danych i pomagam nimi zarządzać;</h3>
-        //         <h3>Zadbam po pozycjonowanie stron i aplikacji;</h3>
-        //     </div>
-        // </div>
