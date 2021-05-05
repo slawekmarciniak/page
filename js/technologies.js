@@ -15,8 +15,8 @@ export function technologies() {
     x: 1000,
     scrollTrigger: {
       trigger: ".technologies",
-      start: "top 200px",
-      end: "top 120px",
+      start: "top 60%",
+      end: "top 50%",
       scrub: 1,
     },
   });

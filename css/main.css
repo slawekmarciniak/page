@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -360,13 +362,14 @@ ul li:hover {
 .main__container h2 {
   line-height: 3rem;
   letter-spacing: 1.5;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
 }
 
 @media (max-width: 599px) {
   .main__container h2 {
     font-size: 12px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     opacity: 0.9;
   }
 }
@@ -434,6 +437,7 @@ ul li:hover {
 }
 
 .technologies__container {
+  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,19 +450,25 @@ ul li:hover {
       align-content: space-between;
   margin-top: auto;
   margin-bottom: auto;
-  z-index: 2;
+  z-index: 1;
+}
+
+@media (max-width: 599px) {
+  .technologies__container {
+    padding: 10%;
+  }
 }
 
 .technologies img {
-  place-self: center;
-  width: 40%;
-  z-index: 2;
-  padding-bottom: 10px;
+  width: 18%;
+  z-index: 1;
+  padding: 30px;
 }
 
 @media (max-width: 599px) {
   .technologies img {
     width: 26%;
+    padding: 10px;
   }
 }
 
@@ -653,6 +663,7 @@ body {
 }
 
 .title {
+  font-family: 'Roboto', sans-serif;
   line-height: 100px;
   font-size: 1.4rem;
   font-weight: normal;
@@ -661,6 +672,6 @@ body {
   text-align: center;
   width: 100%;
   background-color: #0D6DCB;
-  z-index: 1;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */

@@ -41,10 +41,11 @@
 .main__container h2 {
     line-height: 3rem;
     letter-spacing: 1.5;
+    font-family: 'Roboto', sans-serif;;
     font-size: 1.2rem;
     @include phone {
         font-size: 12px;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
         opacity: 0.9;
     }
     
